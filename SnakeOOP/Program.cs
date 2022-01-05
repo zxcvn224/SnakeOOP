@@ -10,7 +10,7 @@ namespace SnakeOOP
         {
             int score = 0;
             //drawing a game field frame
-            Walls walls = new Walls(80, 25);
+            Walls walls = new Walls(40, 25);
             walls.Draw();
 
             Point snakeTail = new Point(15, 15, '>');
@@ -20,6 +20,7 @@ namespace SnakeOOP
             FoodGenerator foodGenerator = new FoodGenerator(80, 25, '$');
             Point food = foodGenerator.GenerateFood();
             food.Draw();
+            Console.ForegroundColor = ConsoleColor.Green;
 
             while (true)
             {
