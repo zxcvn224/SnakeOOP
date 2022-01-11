@@ -29,6 +29,8 @@ namespace SnakeOOP
             Point head = GetNextPoint();
             pointList.Add(head);
             head.Draw();
+            Random rnd = new Random();
+            Console.ForegroundColor = (ConsoleColor)rnd.Next(0, 16);
         }
 
 

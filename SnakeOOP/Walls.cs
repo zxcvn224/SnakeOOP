@@ -31,6 +31,7 @@ namespace SnakeOOP
             wallList.Add(obstacle1);
             wallList.Add(obstacle2);
             wallList.Add(obstacle3);
+            Console.Beep();
         }
         public void Draw()
         {

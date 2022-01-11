@@ -17,6 +17,8 @@ namespace SnakeOOP
             mapWidth = _mapWidth;
             mapHeight = _mapHeight;
             symb = _symb;
+            Console.ForegroundColor = ConsoleColor.Green;
+
         }
 
         public Point GenerateFood()
@@ -24,6 +26,8 @@ namespace SnakeOOP
             int x = rnd.Next(2, mapWidth - 2);
             int y = rnd.Next(2, mapHeight - 2);
             return new Point(x, y, symb);
+            
+
         }
     }
 }
